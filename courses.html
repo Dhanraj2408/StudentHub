@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Student Hub</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#007BFF;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#0056b3;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:20px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .heading{
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        .heading h2{
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        .heading p{
+            color:#666;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:25px;
+            padding:30px;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+            padding:20px;
+        }
+
+        .card h3{
+            color:#007BFF;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            color:#666;
+            margin-bottom:20px;
+        }
+
+        .card button{
+            background:#007BFF;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .card button:hover{
+            background:#0056b3;
+        }
+
+        footer{
+            background:#007BFF;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Student Hub</h1>
+    <p>Explore Your Courses</p>
+</header>
+
+<nav>
+    <a href="studenthub.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="notes.html">Notes</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="heading">
+    <h2>Available Courses</h2>
+    <p>Select a course to begin learning.</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h3>🌐 Web Development</h3>
+        <p>Learn HTML, CSS and JavaScript to build modern websites.</p>
+        <button>View Course</button>
+    </div>
+
+    <div class="card">
+        <h3>☕ Java Programming</h3>
+        <p>Understand Java programming and object-oriented concepts.</p>
+        <button>View Course</button>
+    </div>
+
+    <div class="card">
+        <h3>🐍 Python Programming</h3>
+        <p>Master Python for automation, AI, and web development.</p>
+        <button>View Course</button>
+    </div>
+
+    <div class="card">
+        <h3>🗄️ Database Management</h3>
+        <p>Learn SQL, database design, and data management.</p>
+        <button>View Course</button>
+    </div>
+
+    <div class="card">
+        <h3>💻 Operating Systems</h3>
+        <p>Understand processes, memory management, and file systems.</p>
+        <button>View Course</button>
+    </div>
+
+    <div class="card">
+        <h3>📊 Data Structures</h3>
+        <p>Learn arrays, linked lists, stacks, queues, trees, and graphs.</p>
+        <button>View Course</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

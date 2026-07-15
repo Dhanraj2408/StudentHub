@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: white;
+        }
+
+        .hero h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Student Hub</h1>
+    <p>Welcome to Your Learning Portal</p>
+</header>
+<nav>
+
+<a href="studenthub.html">Home</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="assignments.html">Assignments</a>
+
+<a href="notes.html">Notes</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="login.html">Logout</a>
+
+</nav>
+
+<section class="hero">
+    <h2>Welcome Student!</h2>
+    <p>Access your courses, assignments, notes, and study materials all in one place.</p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h3>📖 Courses</h3>
+        <p>View all your enrolled courses.</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>📝 Assignments</h3>
+        <p>Check pending assignments and deadlines.</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>📂 Study Materials</h3>
+        <p>Download notes, PDFs, and presentations.</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <h3>👤 Profile</h3>
+        <p>Update your personal information.</p>
+        <button>Open</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
