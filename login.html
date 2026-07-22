@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>LOGIN</title>
+    <title>Login</title>
+
     <style>
-    body {
-        font-family: Arial, sans-serif;
-     text-align: center;
-    }
-</style>
+        /* Style the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Login box */
+        .login-box {
+            width: 300px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* Input fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        /* Login button */
+        input[type="submit"] {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Button hover effect */
+        input[type="submit"]:hover {
+            background-color: #005999;
+        }
+
+        /* Register link */
+        .login-box a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Register link hover */
+        .login-box a:hover {
+            color: #005999;
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h2>LOGIN</h2>
-    <form action="studenthub.html">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Login">
-    </form>
+
+    <div class="header">
+        <h1>Student Hub</h1>
+        <p>Student Management System</p>
+    </div>
+
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <form action="studenthub.html">
+
+            <label for="username">Username</label><br>
+
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password</label><br>
+
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        <br>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Register here</a>
+        </p>
+
+    </div>
+
 </body>
+
 </html>

@@ -1,106 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            background-color: #f2f2f2;
+            margin: 0;
+            text-align: center;
         }
 
         header {
-            background: #007BFF;
+            background-color: #007BFF;
             color: white;
             padding: 20px;
-            text-align: center;
         }
 
         nav {
-            background: #0056b3;
-            padding: 10px;
-            text-align: center;
+            background-color: #0056b3;
+            padding: 12px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 20px;
+            margin: 15px;
             font-size: 18px;
         }
 
         nav a:hover {
-            color: yellow;
+            color: rgba(67, 187, 230, 0.747);
         }
 
-        .hero {
-            text-align: center;
-            padding: 50px;
-            background: white;
+        .welcome {
+            padding: 30px;
         }
 
-        .hero h2 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            color: #555;
-            font-size: 18px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            padding: 40px;
-        }
-
-        .card {
-            background: white;
-            width: 250px;
+        .box {
+            display: inline-block;
+            width: 220px;
+            background-color: white;
+            border: 1px solid #ddd;
             padding: 20px;
-            border-radius: 10px;
+            margin: 15px;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            vertical-align: top;
+            border-radius: 15px;
+            
         }
 
-        .card h3 {
+        .box h3 {
             color: #007BFF;
-            margin-bottom: 10px;
         }
 
-        .card p {
-            color: #666;
-            margin-bottom: 20px;
+        .box p {
+            color: #555;
         }
 
-        .card button {
-            background: #007BFF;
+        button {
+            background-color: #007BFF;
             color: white;
             border: none;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
         }
 
-        .card button:hover {
-            background: #0056b3;
+        button:hover {
+            background-color: #0056b3;
         }
 
         footer {
-            background: #007BFF;
+            background-color: #007BFF;
             color: white;
-            text-align: center;
             padding: 15px;
             margin-top: 30px;
         }
@@ -109,62 +83,51 @@
 
 <body>
 
-<header>
-    <h1>📚 Student Hub</h1>
-    <p>Welcome to Your Learning Portal</p>
-</header>
-<nav>
+    <header>
+        <h1>📚 Student Hub</h1>
+        <p>Welcome to Your Learning Portal</p>
+    </header>
 
-<a href="studenthub.html">Home</a>
+    <nav>
+        <a href="index.html">🏠Home</a>
+        <a href="courses.html">📚Courses</a>
+        <a href="assignments.html">📑 Assignments</a>
+        <a href="contact.html">👤Contact Us</a>
+        <a href="login.html">↩ Logout</a>
+    </nav>
 
-<a href="courses.html">Courses</a>
+    <div class="welcome">
+        <h2>Welcome Student!</h2>
+        <p>Access all your academic information from one place.</p>
+    </div>
 
-<a href="assignments.html">Assignments</a>
-
-<a href="notes.html">Notes</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="login.html">Logout</a>
-
-</nav>
-
-<section class="hero">
-    <h2>Welcome Student!</h2>
-    <p>Access your courses, assignments, notes, and study materials all in one place.</p>
-</section>
-
-<div class="container">
-
-    <div class="card">
+    <div class="box">
         <h3>📖 Courses</h3>
-        <p>View all your enrolled courses.</p>
-        <button>Open</button>
+        <p>View all your enrolled courses here.</p>
+        <button onclick="location.href='courses.html'">Open</button>
     </div>
 
-    <div class="card">
+    <div class="box">
         <h3>📝 Assignments</h3>
-        <p>Check pending assignments and deadlines.</p>
-        <button>Open</button>
+        <p>Check your pending assignments.</p>
+        <button onclick="location.href='assignments.html'">Open</button>
     </div>
 
-    <div class="card">
+    <div class="box">
         <h3>📂 Study Materials</h3>
-        <p>Download notes, PDFs, and presentations.</p>
-        <button>Open</button>
+        <p>Download notes and PDFs.</p>
+        <button onclick="location.href='notes.html'">Open</button>
     </div>
 
-    <div class="card">
+    <div class="box">
         <h3>👤 Profile</h3>
-        <p>Update your personal information.</p>
-        <button>Open</button>
+        <p>View and update your profile.</p>
+        <button onclick="location.href='profile.html'">Open</button>
     </div>
 
-</div>
-
-<footer>
-    <p>&copy; 2026 Student Hub | All Rights Reserved</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
