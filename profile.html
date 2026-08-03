@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile - Student Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1461b3fd;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #0056b3;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: rgba(67, 187, 230, 0.747);
+        }
+
+        .profile-container {
+            width: 450px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .profile-container h2 {
+            color: #176dca;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+            margin: auto;
+            line-height: 120px;
+            font-size: 50px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #176dca;
+        }
+
+        button {
+            background-color: #1a74d5f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #1461b3fd;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Student Hub</h1>
+        <p>Welcome to Your Learning Portal</p>
+    </header>
+
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="assignments.html">📝 Assignments</a>
+        <a href="contact.html">📞 Contact Us</a>
+      
+
+    </nav>
+
+    <div class="profile-container">
+
+        <div class="profile-pic">
+            👤
+        </div>
+
+        <h2>Student Profile</h2>
+
+        <table>
+            <tr>
+                <td class="label">Name</td>
+                <td>Dhanraj Solanki</td>
+            </tr>
+
+            <tr>
+                <td class="label">Student ID</td>
+                <td>25DCE111</td>
+            </tr>
+
+            <tr>
+                <td class="label">Email</td>
+                <td>25dce111@charusat.edu.in</td>
+            </tr>
+
+            <tr>
+                <td class="label">Course</td>
+                <td>Bachelor of Computer Engineering</td>
+            </tr>
+
+            <tr>
+                <td class="label">Semester</td>
+                <td> 3</td>
+            </tr>
+
+            <tr>
+                <td class="label">Phone</td>
+                <td>9408627345</td>
+            </tr>
+        </table>
+
+        <button>Edit Profile</button>
+        <button onclick="location.href='login.html'">Logout</button>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Hub | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
