@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Student Hub</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial,sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background: #1461b3fd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#0953a1;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:#58a5f8fb;
+        }
+
+        .register-box{
+            width:350px;
+            background:white;
+            margin:50px auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .register-box h2{
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .register-box input{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .register-box input[type="submit"]{
+            background: #1461b3fd;
+            color:white;
+            border:none;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .register-box input[type="submit"]:hover{
+            background:#0056b3;
+        }
+
+        .register-box p{
+            margin-top:15px;
+        }
+
+        .register-box a{
+            color:#0077cc;
+            text-decoration:none;
+        }
+
+        .register-box a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Hub</h1>
+        <p>Create your student account</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="register-box">
+        <h2>Register</h2>
+
+        <form action="login.html">
+
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <input type="submit" value="Register">
+
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+</body>
+</html>

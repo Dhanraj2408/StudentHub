@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            text-align: center;
+        }
+
+        .header {
+            background-color:  #1461b3fd;
+            color: white;
+            padding: 20px;
+        }
+
+        .login-box {
+            width: 300px;
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #005999;
+        }
+
+        .login-box a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-box a:hover {
+            color: #005999;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>👨‍🎓Student Hub</h1>
+        <p>Student Management System</p>
+    </div>
+
+    <div class="login-box">
+
+        <h2>Login</h2>
+
+        <form action="studenthub.html">
+
+            <label for="username">Username</label><br>
+
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password</label><br>
+
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        <br>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Register here</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

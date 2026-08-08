@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+header {
+    background-color: #1461b3;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* ========================================
+   NAVIGATION BAR
+   ======================================== */
+
+nav {
+    background-color: #0056b3;
+    padding: 12px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgba(67, 187, 230, 0.747);
+}
+
+
+/* ========================================
+   PAGE HEADING
+   ======================================== */
+
+.heading {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.heading h2 {
+    color: #176dca;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.heading p {
+    color: #555555;
+    font-size: 16px;
+}
+
+
+/* ========================================
+   COURSE CONTAINER
+   ======================================== */
+
+.course-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* ========================================
+   COURSE BOX
+   ======================================== */
+
+.course-box {
+    width: 300px;
+    min-height: 230px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+
+/* ========================================
+   COURSE BOX HOVER
+   ======================================== */
+
+.course-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   COURSE HEADING
+   ======================================== */
+
+.course-box h3 {
+    color: #176dca;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   COURSE DESCRIPTION
+   ======================================== */
+
+.course-box p {
+    color: #555555;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   BUTTON
+   ======================================== */
+
+button {
+    background-color: #1a74d5;
+    color: #ffffff;
+
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 16px;
+
+    align-self: center;
+}
+
+
+/* ========================================
+   BUTTON HOVER
+   ======================================== */
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    background-color: #1461b3;
+    color: #ffffff;
+
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .course-container {
+        width: 95%;
+    }
+
+    .course-box {
+        width: 90%;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+}
