@@ -1,219 +1,754 @@
 
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+/*BODY*/
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333333;
+  text-align: center;
 }
 
 
-/* ========================================
-   HEADER
-   ======================================== */
+/* HEADER */
 
-header {
-    background-color: #1461b3;
-    color: #ffffff;
-    padding: 20px;
+header,
+.header {
+  background-color: #1461b3;
+  color: #ffffff;
+  padding: 20px;
 }
 
-header h1 {
-    margin-bottom: 8px;
+header h1,
+.header h1 {
+  margin-bottom: 8px;
 }
 
-header p {
-    font-size: 16px;
-}
-
-
-/* ========================================
-   NAVIGATION BAR
-   ======================================== */
-
-nav {
-    background-color: #0056b3;
-    padding: 12px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: rgba(67, 187, 230, 0.747);
+header p,
+.header p {
+  font-size: 16px;
 }
 
 
-/* ========================================
-   PAGE HEADING
-   ======================================== */
+/*NAVIGATION */
+
+nav,
+.navbar {
+  background-color: #0056b3;
+  padding: 12px;
+}
+
+nav a,
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 15px;
+  font-size: 18px;
+}
+
+nav a:hover,
+.navbar a:hover {
+  color: rgba(67, 187, 230, 0.747);
+}
+
+
+/* PAGE HEADING */
 
 .heading {
-    text-align: center;
-    padding: 40px 20px 25px;
+  text-align: center;
+  padding: 40px 20px 25px;
 }
 
 .heading h2 {
-    color: #176dca;
-    margin-bottom: 10px;
-    font-size: 30px;
+  color: #176dca;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .heading p {
-    color: #555555;
-    font-size: 16px;
+  color: #555555;
+  font-size: 16px;
 }
 
 
-/* ========================================
-   COURSE CONTAINER
-   ======================================== */
+/* =========================================
+   INDEX PAGE
+   ========================================= */
+
+.content {
+  padding: 40px 20px;
+}
+
+.content h2 {
+  color: #176dca;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.content p {
+  max-width: 750px;
+  margin: 0 auto 25px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+
+/* Index page buttons */
+
+.content .btn {
+  display: inline-block;
+  background-color: #1a74d5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.content .btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* =========================================
+   STUDENT HUB HOME PAGE
+   ========================================= */
+
+.welcome {
+  padding: 40px 20px 25px;
+}
+
+.welcome h2 {
+  color: #176dca;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.welcome p {
+  color: #555555;
+  font-size: 16px;
+}
+
+
+/* Student Hub boxes */
+
+.box {
+  display: inline-flex;
+
+  width: 300px;
+  min-height: 230px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+
+  padding: 25px;
+  margin: 12px;
+
+  text-align: center;
+  vertical-align: top;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box h3 {
+  color: #176dca;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.box p {
+  color: #555555;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   COURSES PAGE
+   ========================================= */
 
 .course-container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 25px;
 }
-
-
-/* ========================================
-   COURSE BOX
-   ======================================== */
 
 .course-box {
-    width: 300px;
-    min-height: 230px;
+  width: 300px;
+  min-height: 230px;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 
-    border: 1px solid #dddddd;
-    border-radius: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
 
-    padding: 25px;
+  padding: 25px;
 
-    text-align: center;
+  text-align: center;
 
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
-
-
-/* ========================================
-   COURSE BOX HOVER
-   ======================================== */
 
 .course-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
-
-
-/* ========================================
-   COURSE HEADING
-   ======================================== */
 
 .course-box h3 {
-    color: #176dca;
-    font-size: 20px;
-    margin-bottom: 15px;
+  color: #176dca;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
-
-
-/* ========================================
-   COURSE DESCRIPTION
-   ======================================== */
 
 .course-box p {
-    color: #555555;
-    line-height: 1.5;
-    font-size: 15px;
-    margin-bottom: 20px;
+  color: #555555;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 
-/* ========================================
-   BUTTON
-   ======================================== */
+/* =========================================
+   ASSIGNMENT PAGE
+   ========================================= */
+
+/*
+   Your assignment.html uses:
+   <div class="container">
+   <div class="assignment-box">
+*/
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 25px;
+}
+
+
+/* Assignment boxes */
+
+.assignment-box {
+  width: 300px;
+  min-height: 230px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s;
+}
+
+.assignment-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.assignment-box h3 {
+  color: #176dca;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.assignment-box p {
+  color: #555555;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+/* =========================================
+   NOTES PAGE
+   ========================================= */
+
+/*
+   Your notes.html uses:
+   <div class="container">
+   <div class="card">
+*/
+
+.card {
+  width: 300px;
+  min-height: 180px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #176dca;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 
 button {
-    background-color: #1a74d5;
-    color: #ffffff;
+  background-color: #1a74d5;
 
-    border: none;
-    padding: 10px 20px;
+  color: #ffffff;
 
-    border-radius: 8px;
+  border: none;
 
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px 20px;
 
-    align-self: center;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  align-self: center;
 }
-
-
-/* ========================================
-   BUTTON HOVER
-   ======================================== */
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 
-/* ========================================
+/* =========================================
+   LOGIN PAGE
+   ========================================= */
+
+.login-box {
+  width: 350px;
+  max-width: 90%;
+
+  background-color: #ffffff;
+
+  margin: 50px auto;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  border: 1px solid #dddddd;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #176dca;
+
+  margin-bottom: 25px;
+
+  font-size: 28px;
+}
+
+.login-box label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 90%;
+
+  padding: 10px;
+
+  margin-top: 8px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+  outline: none;
+
+  border-color: #1a74d5;
+}
+
+.login-box input[type="submit"] {
+  background-color: #1a74d5;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  font-size: 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-box a {
+  color: #176dca;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.login-box a:hover {
+  color: #0056b3;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   REGISTER PAGE
+   ========================================= */
+
+.register-box {
+  width: 350px;
+  max-width: 90%;
+
+  background-color: #ffffff;
+
+  margin: 50px auto;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  border: 1px solid #dddddd;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.register-box h2 {
+  margin-bottom: 20px;
+
+  color: #176dca;
+
+  font-size: 28px;
+}
+
+.register-box input {
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 10px 0;
+
+  border: 1px solid #cccccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+.register-box input:focus {
+  outline: none;
+
+  border-color: #1a74d5;
+}
+
+.register-box input[type="submit"] {
+  background-color: #1a74d5;
+
+  color: #ffffff;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+}
+
+.register-box input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.register-box p {
+  margin-top: 15px;
+
+  color: #555555;
+}
+
+.register-box a {
+  color: #176dca;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.register-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   PROFILE PAGE
+   ========================================= */
+
+.profile-container {
+  width: 450px;
+  max-width: 90%;
+
+  margin: 40px auto;
+
+  background-color: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  border: 1px solid #dddddd;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.profile-container h2 {
+  color: #176dca;
+
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+
+  height: 120px;
+
+  border-radius: 50%;
+
+  background-color: #d9d9d9;
+
+  margin: auto;
+
+  line-height: 120px;
+
+  font-size: 50px;
+}
+
+.profile-container table {
+  width: 100%;
+
+  margin-top: 25px;
+
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+.profile-container td {
+  padding: 10px;
+
+  font-size: 17px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.label {
+  font-weight: bold;
+
+  color: #176dca;
+}
+
+.profile-container button {
+  margin-top: 20px;
+
+  margin-left: 5px;
+
+  margin-right: 5px;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+/*
+   about.html currently does not use a
+   special class for its content.
+*/
+
+body > h1 {
+  color: #176dca;
+
+  margin-top: 40px;
+
+  margin-bottom: 20px;
+
+  font-size: 30px;
+}
+
+body > p {
+  color: #555555;
+
+  line-height: 1.6;
+
+  font-size: 16px;
+
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+}
+
+
+/* =========================================
    FOOTER
-   ======================================== */
+   ========================================= */
 
-footer {
-    background-color: #1461b3;
-    color: #ffffff;
+footer,
+.footer {
+  background-color: #1461b3;
 
-    padding: 15px;
-    margin-top: 40px;
+  color: #ffffff;
+
+  padding: 15px;
+
+  margin-top: 40px;
 }
 
-footer p {
-    margin: 0;
+footer p,
+.footer p {
+  margin: 0;
 }
 
 
-/* ========================================
+/* =========================================
    RESPONSIVE DESIGN
-   ======================================== */
+   ========================================= */
 
 @media (max-width: 700px) {
 
-    nav a {
-        display: block;
-        margin: 10px;
-    }
+  nav a,
+  .navbar a {
+    display: block;
 
-    .course-container {
-        width: 95%;
-    }
+    margin: 10px;
+  }
 
-    .course-box {
-        width: 90%;
-    }
+  .course-container,
+  .container {
+    width: 95%;
+  }
 
-    .heading h2 {
-        font-size: 25px;
-    }
+  .course-box,
+  .assignment-box,
+  .card {
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+
+    margin: 10px auto;
+  }
+
+  .login-box,
+  .register-box {
+    width: 90%;
+  }
+
+  .profile-container {
+    width: 90%;
+  }
+
+  .heading h2,
+  .welcome h2,
+  .content h2 {
+    font-size: 25px;
+  }
+
+  .content {
+    padding: 30px 15px;
+  }
 }
