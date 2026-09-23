@@ -78,9 +78,7 @@ nav a:hover,
 }
 
 
-/* =========================================
-   INDEX PAGE
-   ========================================= */
+/* INDEX PAGE*/
 
 .content {
   padding: 40px 20px;
@@ -118,9 +116,7 @@ nav a:hover,
 }
 
 
-/* =========================================
-   STUDENT HUB HOME PAGE
-   ========================================= */
+/*  STUDENT HUB HOME PAGE */
 
 .welcome {
   padding: 40px 20px 25px;
@@ -184,9 +180,7 @@ nav a:hover,
 }
 
 
-/* =========================================
-   COURSES PAGE
-   ========================================= */
+/* courses pages*/
 
 .course-container {
   width: 90%;
@@ -243,15 +237,7 @@ nav a:hover,
 }
 
 
-/* =========================================
-   ASSIGNMENT PAGE
-   ========================================= */
-
-/*
-   Your assignment.html uses:
-   <div class="container">
-   <div class="assignment-box">
-*/
+/*  ASSIGNMENT PAGE */
 
 .container {
   width: 90%;
@@ -311,15 +297,8 @@ nav a:hover,
 }
 
 
-/* =========================================
-   NOTES PAGE
-   ========================================= */
+/*  NOTES PAGE */
 
-/*
-   Your notes.html uses:
-   <div class="container">
-   <div class="card">
-*/
 
 .card {
   width: 300px;
@@ -355,9 +334,7 @@ nav a:hover,
 }
 
 
-/* =========================================
-   BUTTONS
-   ========================================= */
+/* BUTTONS*/
 
 button {
   background-color: #1a74d5;
@@ -382,9 +359,7 @@ button:hover {
 }
 
 
-/* =========================================
-   LOGIN PAGE
-   ========================================= */
+/* LOGIN PAGE */
 
 .login-box {
   width: 350px;
@@ -480,9 +455,7 @@ button:hover {
 }
 
 
-/* =========================================
-   REGISTER PAGE
-   ========================================= */
+/*REGISTER PAGE*/
 
 .register-box {
   width: 350px;
@@ -570,9 +543,7 @@ button:hover {
 }
 
 
-/* =========================================
-   PROFILE PAGE
-   ========================================= */
+/* PROFILE PAGE */
 
 .profile-container {
   width: 450px;
@@ -648,14 +619,7 @@ button:hover {
 }
 
 
-/* =========================================
-   ABOUT PAGE
-   ========================================= */
-
-/*
-   about.html currently does not use a
-   special class for its content.
-*/
+/*ABOUT PAGE */
 
 body > h1 {
   color: #176dca;
@@ -682,9 +646,7 @@ body > p {
 }
 
 
-/* =========================================
-   FOOTER
-   ========================================= */
+/* FOOTER */
 
 footer,
 .footer {
@@ -703,9 +665,7 @@ footer p,
 }
 
 
-/* =========================================
-   RESPONSIVE DESIGN
-   ========================================= */
+/*  RESPONSIVE DESIGN */
 
 @media (max-width: 700px) {
 
