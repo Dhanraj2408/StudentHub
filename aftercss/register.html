@@ -1,44 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Student Hub</title>
+    <title>Student Hub - Registration</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
     <header>
-        <h1>📚 Student Hub</h1>
-        <p>Create your student account</p>
+        <h1>Student Hub</h1>
+        <p>Student Registration Form</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="about.html">About</a>
+    <nav class="navbar">
+        <a href="studenthub.html">🏠 Home</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="assignment.html">📑 Assignments</a>
+        <a href="about.html">📞 Contact Us</a>
+        <a href="login.html">🔐 Login</a>
     </nav>
 
-    <div class="register-box">
-        <h2>Register</h2>
+    <main class="registration-container">
+        <h2>Create Your Account</h2>
+        <p>Enter your details to register with Student Hub.</p>
 
-        <form action="login.html">
+        <form id="registrationForm" novalidate>
 
-            <input type="text" id="username" name="username" placeholder="Enter username" required>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       autocomplete="name" required
+                       aria-describedby="nameError">
+                <small class="error" id="nameError"></small>
+            </div>
 
-            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com"
+                       autocomplete="email" required
+                       aria-describedby="emailError">
+                <small class="error" id="emailError"></small>
+            </div>
 
-            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile"
+                       placeholder="Enter 10-digit mobile number"
+                       inputmode="numeric" maxlength="10"
+                       autocomplete="tel" required
+                       aria-describedby="mobileError">
+                <small class="error" id="mobileError"></small>
+            </div>
 
-            <input type="submit" value="Register">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a password"
+                       autocomplete="new-password" required
+                       aria-describedby="passwordHelp passwordError">
+                <small id="passwordHelp">
+                    Use 8+ characters with uppercase, lowercase,
+                    a number and a special character.
+                </small>
+                <div class="strength-track" aria-hidden="true">
+                    <div id="strengthBar"></div>
+                </div>
+                <p id="strengthText" aria-live="polite">Password strength: Not entered</p>
+                <small class="error" id="passwordError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword"
+                       name="confirmPassword"
+                       placeholder="Re-enter your password"
+                       autocomplete="new-password" required
+                       aria-describedby="confirmPasswordError">
+                <small class="error" id="confirmPasswordError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required
+                        aria-describedby="courseError">
+                    <option value="">-- Choose your course --</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BSc IT">B.Sc. IT</option>
+                    <option value="BTech">B.Tech</option>
+            
+                </select>
+                <small class="error" id="courseError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Academic Year</label>
+                <select id="year" name="year" required
+                        aria-describedby="yearError">
+                    <option value="">-- Select your year --</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+                <small class="error" id="yearError"></small>
+            </div>
+
+            <fieldset class="form-group gender-group">
+                <legend>Gender</legend>
+
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+
+                <small class="error" id="genderError"></small>
+            </fieldset>
+
+            <div class="form-group terms-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms">
+                    I accept the terms and conditions.
+                </label>
+                <small class="error" id="termsError"></small>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Register Now
+            </button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
 
         </form>
+    </main>
 
-        <p>Already have an account? <a href="login.html">Login here</a></p>
-    </div>
+    <footer>
+        <p>&copy; 2026 Student Hub | Student Management System</p>
+    </footer>
 
 </body>
 </html>

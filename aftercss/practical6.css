@@ -1,0 +1,159 @@
+
+
+.p6-container {
+    max-width: 1100px;
+    width: 92%;
+    margin: 30px auto;
+    color: #333333;
+}
+
+.p6-container h2 {
+    color: #176dca;
+    text-align: center;
+}
+
+.p6-container > p {
+    text-align: center;
+}
+
+.p6-controls {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 14px;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.p6-controls label {
+    font-weight: bold;
+}
+
+.p6-controls input:not([type="checkbox"]),
+.p6-controls select {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333333;
+}
+
+.p6-controls input:focus,
+.p6-controls select:focus {
+    outline: 2px solid #176dca;
+    outline-offset: 2px;
+}
+
+.p6-controls .p6-cache-option {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: normal;
+}
+
+#loadingMessage,
+#errorMessage,
+#resultCount {
+    margin: 18px 0;
+}
+
+#errorMessage {
+    color: #c62828;
+}
+
+.p6-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.p6-card {
+    min-width: 0;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.p6-card h3 {
+    color: #176dca;
+    margin-top: 0;
+}
+
+.p6-card p {
+    line-height: 1.5;
+}
+
+.p6-tag {
+    display: inline-block;
+    padding: 5px 9px;
+    margin-top: 5px;
+    border-radius: 12px;
+    background: #e8f2ff;
+    color: #0056b3;
+    font-size: 12px;
+}
+
+.p6-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.p6-pagination button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #176dca;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.p6-pagination button:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+.p6-pagination button:disabled {
+    background: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.p6-note {
+    color: #555555;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .p6-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .p6-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .p6-controls .p6-cache-option {
+        grid-column: auto;
+    }
+
+    .p6-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .p6-pagination {
+        gap: 10px;
+    }
+}

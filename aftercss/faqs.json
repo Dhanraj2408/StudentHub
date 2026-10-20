@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"question":"How do I register?","answer":"Open the Register page and complete all required fields.","category":"Account"},
+  {"id":2,"question":"How do I log in?","answer":"Open the Login page and enter your username and password.","category":"Account"},
+  {"id":3,"question":"Where can I find my courses?","answer":"Open the Courses page from the navigation menu.","category":"Courses"},
+  {"id":4,"question":"Where are assignments displayed?","answer":"Visit the Assignments page to view available assignments.","category":"Assignments"},
+  {"id":5,"question":"How can I access notes?","answer":"Open the Notes page and select your subject.","category":"Study"},
+  {"id":6,"question":"Can I update my profile?","answer":"Visit the Profile page to view your profile information.","category":"Account"},
+  {"id":7,"question":"How do I contact the college?","answer":"Use the Contact Us page for contact information.","category":"Support"},
+  {"id":8,"question":"What if I forget my password?","answer":"Contact the system administrator to request password assistance.","category":"Account"},
+  {"id":9,"question":"How can I search for students?","answer":"Use the search box on the student directory.","category":"Students"},
+  {"id":10,"question":"How are events displayed?","answer":"Events are loaded from a JSON file using the Fetch API.","category":"Events"},
+  {"id":11,"question":"Can I filter events?","answer":"Select an event category from the filter dropdown.","category":"Events"},
+  {"id":12,"question":"What is JSON?","answer":"JSON is a text format used to store and exchange structured data.","category":"Technical"},
+  {"id":13,"question":"What is the Fetch API?","answer":"It allows JavaScript to request resources such as JSON files.","category":"Technical"},
+  {"id":14,"question":"Why is my data not loading?","answer":"Make sure the local server is running and the JSON filename is correct.","category":"Technical"},
+  {"id":15,"question":"How does pagination work?","answer":"Pagination displays a limited number of records on each page.","category":"Technical"}
+]

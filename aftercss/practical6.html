@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Dynamic Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="practical6.css">
+    <script src="practical6.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Student Hub</h1>
+        <p>Dynamic Data Explorer</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="studenthub.html">🏠 Home</a>
+        <a href="courses.html">📚 Courses</a>
+        <a href="assignment.html">📑 Assignments</a>
+        <a href="notes.html">📝 Notes</a>
+        <a href="about.html">📞 Contact Us</a>
+    </nav>
+
+    <main class="p6-container">
+        <h2>Explore Student Hub Data</h2>
+        <p>Search, filter, sort and browse data loaded from JSON files.</p>
+
+        <div class="p6-controls">
+            <label for="dataType">Choose data</label>
+            <select id="dataType">
+                <option value="events">Events</option>
+                <option value="students">Students</option>
+                <option value="faqs">FAQs</option>
+            </select>
+
+            <label for="searchInput">Search</label>
+            <input type="search" id="searchInput"
+                   placeholder="Type to search..." autocomplete="off">
+
+            <label for="categoryFilter">Filter category/course</label>
+            <select id="categoryFilter">
+                <option value="">All categories</option>
+            </select>
+
+            <label for="sortOrder">Sort by</label>
+            <select id="sortOrder">
+                <option value="default">Default order</option>
+                <option value="az">Name/title: A to Z</option>
+                <option value="za">Name/title: Z to A</option>
+            </select>
+
+            <label class="p6-cache-option">
+                <input type="checkbox" id="offlineCache">
+                Use saved data if available
+            </label>
+        </div>
+
+        <p id="loadingMessage" role="status" aria-live="polite">
+            Loading data...
+        </p>
+
+        <p id="errorMessage" role="alert"></p>
+
+        <p id="resultCount" aria-live="polite"></p>
+
+        <section id="dataContainer" class="p6-grid"
+                 aria-label="Loaded records"></section>
+
+        <div class="p6-pagination">
+            <button id="previousPage" type="button">Previous</button>
+            <span id="pageInfo" aria-live="polite">Page 1</span>
+            <button id="nextPage" type="button">Next</button>
+        </div>
+
+        <p class="p6-note">
+            Data is loaded from local JSON files. Use a local server
+            to run the Fetch API correctly.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Hub | Student Management System</p>
+    </footer>
+
+</body>
+</html>

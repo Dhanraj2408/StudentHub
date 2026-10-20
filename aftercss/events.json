@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"title":"Web Development Workshop","category":"Workshop","date":"2026-10-20","location":"Computer Lab 1"},
+  {"id":2,"title":"Coding Competition","category":"Competition","date":"2026-10-22","location":"Main Auditorium"},
+  {"id":3,"title":"Sports Day","category":"Sports","date":"2026-10-25","location":"College Ground"},
+  {"id":4,"title":"Java Programming Seminar","category":"Seminar","date":"2026-10-27","location":"Room 101"},
+  {"id":5,"title":"Photography Contest","category":"Competition","date":"2026-10-29","location":"Art Hall"},
+  {"id":6,"title":"Cyber Security Workshop","category":"Workshop","date":"2026-11-02","location":"Computer Lab 2"},
+  {"id":7,"title":"Annual Cultural Fest","category":"Cultural","date":"2026-11-05","location":"Main Auditorium"},
+  {"id":8,"title":"Robotics Exhibition","category":"Exhibition","date":"2026-11-08","location":"Science Block"},
+  {"id":9,"title":"Career Guidance Seminar","category":"Seminar","date":"2026-11-10","location":"Seminar Hall"},
+  {"id":10,"title":"Football Tournament","category":"Sports","date":"2026-11-12","location":"College Ground"},
+  {"id":11,"title":"AI Innovation Workshop","category":"Workshop","date":"2026-11-15","location":"Computer Lab 1"},
+  {"id":12,"title":"Project Presentation","category":"Academic","date":"2026-11-18","location":"Room 201"},
+  {"id":13,"title":"Debate Competition","category":"Competition","date":"2026-11-20","location":"Main Auditorium"},
+  {"id":14,"title":"Science Exhibition","category":"Exhibition","date":"2026-11-23","location":"Science Block"},
+  {"id":15,"title":"Alumni Meet","category":"Cultural","date":"2026-11-28","location":"College Hall"}
+]

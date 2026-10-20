@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +6,15 @@
 }
 
 
-/*BODY*/
+/* BODY */
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   color: #333333;
   text-align: center;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -37,7 +38,7 @@ header p,
 }
 
 
-/*NAVIGATION */
+/* NAVIGATION */
 
 nav,
 .navbar {
@@ -56,6 +57,90 @@ nav a,
 nav a:hover,
 .navbar a:hover {
   color: rgba(67, 187, 230, 0.747);
+}
+
+
+/* PRACTICAL 4  NAVIGATION BUTTONS*/
+
+#navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+
+  background-color: transparent;
+  color: #ffffff;
+
+  border: none;
+  padding: 5px 10px;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.theme-button {
+  background-color: transparent;
+
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+
+  padding: 6px 10px;
+
+  margin-left: 10px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.theme-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* PRACTICAL 4 NOTIFICATION */
+
+.notification {
+  background-color: #1a74d5;
+
+  color: #ffffff;
+
+  padding: 10px 45px 10px 15px;
+
+  position: relative;
+
+  font-size: 15px;
+}
+
+.notification button {
+  position: absolute;
+
+  right: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background-color: transparent;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 0;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.notification button:hover {
+  background-color: transparent;
 }
 
 
@@ -78,7 +163,7 @@ nav a:hover,
 }
 
 
-/* INDEX PAGE*/
+/* INDEX PAGE */
 
 .content {
   padding: 40px 20px;
@@ -116,7 +201,7 @@ nav a:hover,
 }
 
 
-/*  STUDENT HUB HOME PAGE */
+/* STUDENT HUB HOME PAGE */
 
 .welcome {
   padding: 40px 20px 25px;
@@ -180,7 +265,7 @@ nav a:hover,
 }
 
 
-/* courses pages*/
+/* COURSES PAGE*/
 
 .course-container {
   width: 90%;
@@ -237,7 +322,7 @@ nav a:hover,
 }
 
 
-/*  ASSIGNMENT PAGE */
+/* ASSIGNMENT PAGE */
 
 .container {
   width: 90%;
@@ -253,8 +338,6 @@ nav a:hover,
   gap: 25px;
 }
 
-
-/* Assignment boxes */
 
 .assignment-box {
   width: 300px;
@@ -297,8 +380,7 @@ nav a:hover,
 }
 
 
-/*  NOTES PAGE */
-
+/* NOTES PAGE */
 
 .card {
   width: 300px;
@@ -334,7 +416,7 @@ nav a:hover,
 }
 
 
-/* BUTTONS*/
+/* BUTTONS */
 
 button {
   background-color: #1a74d5;
@@ -359,7 +441,265 @@ button:hover {
 }
 
 
-/* LOGIN PAGE */
+/* =========================================
+   PRACTICAL 4 - SLIDER
+   ========================================= */
+
+.slider-section {
+  width: 90%;
+  max-width: 800px;
+
+  margin: 45px auto;
+
+  padding: 25px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 15px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-section h2 {
+  color: #176dca;
+
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.slide-content {
+  flex: 1;
+
+  min-height: 100px;
+
+  padding: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.slide-content h3 {
+  color: #176dca;
+
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  color: #555555;
+
+  line-height: 1.5;
+}
+
+.slider button {
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+}
+
+#slideNumber {
+  color: #777777;
+
+  margin-top: 10px;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   PRACTICAL 4 - FAQ
+   ========================================= */
+
+.faq-section {
+  width: 90%;
+  max-width: 800px;
+
+  margin: 45px auto;
+
+  text-align: left;
+}
+
+.faq-section h2 {
+  text-align: center;
+
+  color: #176dca;
+
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 10px;
+
+  margin-bottom: 10px;
+
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  color: #333333;
+
+  padding: 15px;
+
+  text-align: left;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-radius: 0;
+
+  font-size: 16px;
+}
+
+.faq-question:hover {
+  background-color: #f2f2f2;
+
+  color: #176dca;
+}
+
+.faq-answer {
+  max-height: 0;
+
+  overflow: hidden;
+
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer.active {
+  max-height: 100px;
+}
+
+.faq-answer p {
+  padding: 15px;
+
+  color: #555555;
+
+  line-height: 1.5;
+}
+
+
+/* PRACTICAL 4  MODAL*/
+
+.modal {
+  display: none;
+
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 1000;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  width: 400px;
+  max-width: 90%;
+
+  background-color: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  position: relative;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.8);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+}
+
+.modal-content h2 {
+  color: #176dca;
+
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  color: #555555;
+
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+}
+
+.close-modal {
+  position: absolute;
+
+  right: 12px;
+  top: 8px;
+
+  background-color: transparent;
+
+  color: #555555;
+
+  font-size: 25px;
+
+  padding: 0;
+}
+
+.close-modal:hover {
+  background-color: transparent;
+
+  color: #0056b3;
+}
+
+
+/* LOGIN PAGE*/
 
 .login-box {
   width: 350px;
@@ -455,7 +795,7 @@ button:hover {
 }
 
 
-/*REGISTER PAGE*/
+/* REGISTER PAGE */
 
 .register-box {
   width: 350px;
@@ -619,7 +959,7 @@ button:hover {
 }
 
 
-/*ABOUT PAGE */
+/* ABOUT PAGE */
 
 body > h1 {
   color: #176dca;
@@ -665,7 +1005,88 @@ footer p,
 }
 
 
-/*  RESPONSIVE DESIGN */
+/* DARK MODE */
+
+body.dark-mode {
+  background-color: #121212;
+
+  color: #eeeeee;
+}
+
+body.dark-mode .heading h2,
+body.dark-mode .welcome h2,
+body.dark-mode .content h2 {
+  color: #58a5f8;
+}
+
+body.dark-mode .heading p,
+body.dark-mode .welcome p,
+body.dark-mode .content p {
+  color: #dddddd;
+}
+
+
+body.dark-mode .box,
+body.dark-mode .course-box,
+body.dark-mode .assignment-box,
+body.dark-mode .card,
+body.dark-mode .login-box,
+body.dark-mode .register-box,
+body.dark-mode .profile-container,
+body.dark-mode .slider-section,
+body.dark-mode .faq-item,
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+
+  border-color: #444444;
+}
+
+
+body.dark-mode .box h3,
+body.dark-mode .course-box h3,
+body.dark-mode .assignment-box h3,
+body.dark-mode .card h3,
+body.dark-mode .profile-container h2,
+body.dark-mode .login-box h2,
+body.dark-mode .register-box h2,
+body.dark-mode .slider-section h2,
+body.dark-mode .slide-content h3,
+body.dark-mode .faq-section h2,
+body.dark-mode .modal-content h2 {
+  color: #58a5f8;
+}
+
+
+body.dark-mode .box p,
+body.dark-mode .course-box p,
+body.dark-mode .assignment-box p,
+body.dark-mode .slide-content p,
+body.dark-mode .faq-answer p,
+body.dark-mode .login-box label,
+body.dark-mode .register-box p {
+  color: #cccccc;
+}
+
+
+body.dark-mode .faq-question {
+  background-color: #1e1e1e;
+
+  color: #eeeeee;
+}
+
+body.dark-mode .faq-question:hover {
+  background-color: #292929;
+}
+
+body.dark-mode .login-box input,
+body.dark-mode .register-box input {
+  background-color: #292929;
+
+  color: #ffffff;
+
+  border-color: #555555;
+}
+
 
 @media (max-width: 700px) {
 
@@ -676,10 +1097,33 @@ footer p,
     margin: 10px;
   }
 
+
+  /* Hamburger */
+
+  .menu-button {
+    display: inline-block;
+  }
+
+
+  #navLinks {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+
+  #navLinks.show {
+    display: flex;
+  }
+
+
   .course-container,
   .container {
     width: 95%;
   }
+
 
   .course-box,
   .assignment-box,
@@ -687,20 +1131,24 @@ footer p,
     width: 90%;
   }
 
+
   .box {
     width: 90%;
 
     margin: 10px auto;
   }
 
+
   .login-box,
   .register-box {
     width: 90%;
   }
 
+
   .profile-container {
     width: 90%;
   }
+
 
   .heading h2,
   .welcome h2,
@@ -708,7 +1156,190 @@ footer p,
     font-size: 25px;
   }
 
+
   .content {
     padding: 30px 15px;
   }
+
+
+  .slider-section {
+    width: 90%;
+  }
+
+
+  .faq-section {
+    width: 90%;
+  }
+
+}
+
+
+/* PRACTICAL 5 - REGISTRATION FORM */
+
+.registration-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.registration-container h2 {
+    color: #176dca;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registration-container > p {
+    text-align: center;
+}
+
+.registration-container .form-group {
+    margin-bottom: 18px;
+}
+
+.registration-container .form-group > label,
+.registration-container .form-group > legend {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.registration-container .form-group input:not([type="radio"]):not([type="checkbox"]),
+.registration-container .form-group select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333333;
+}
+
+.registration-container .form-group input:focus,
+.registration-container .form-group select:focus {
+    outline: 2px solid #176dca;
+    outline-offset: 2px;
+}
+
+.registration-container .form-group input[type="radio"],
+.registration-container .form-group input[type="checkbox"] {
+    width: auto;
+    accent-color: #176dca;
+}
+
+.registration-container .gender-group {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.registration-container .gender-group label,
+.registration-container .terms-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 12px;
+    font-weight: normal;
+}
+
+.registration-container .error {
+    display: block;
+    color: #c62828;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.registration-container .invalid {
+    border: 2px solid #c62828 !important;
+}
+
+.registration-container .valid {
+    border: 2px solid #218838 !important;
+}
+
+.registration-container #passwordHelp {
+    display: block;
+    color: #555555;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.registration-container .strength-track {
+    width: 100%;
+    height: 8px;
+    margin-top: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.registration-container #strengthBar {
+    width: 0%;
+    height: 100%;
+    background: #999999;
+    transition: width 0.3s ease;
+}
+
+.registration-container #strengthText {
+    text-align: left;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.registration-container .register-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #176dca;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registration-container .register-btn:hover {
+    background: #0056b3;
+}
+
+.registration-container .register-btn:focus-visible,
+.registration-container a:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+.registration-container #formMessage {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.registration-container .success-message {
+    color: #218838;
+}
+
+.registration-container .error-message {
+    color: #c62828;
+}
+
+.registration-container .login-link {
+    margin-top: 18px;
+}
+
+.registration-container .login-link a {
+    color: #176dca;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .registration-container {
+        width: 94%;
+        padding: 18px;
+    }
 }

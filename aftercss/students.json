@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"name":"Aarav Patel","course":"BCA","year":1,"email":"aarav@example.com"},
+  {"id":2,"name":"Diya Shah","course":"BTech","year":2,"email":"diya@example.com"},
+  {"id":3,"name":"Rohan Mehta","course":"BSc IT","year":3,"email":"rohan@example.com"},
+  {"id":4,"name":"Ananya Desai","course":"BCA","year":2,"email":"ananya@example.com"},
+  {"id":5,"name":"Vivaan Joshi","course":"BCom","year":1,"email":"vivaan@example.com"},
+  {"id":6,"name":"Isha Trivedi","course":"BTech","year":4,"email":"isha@example.com"},
+  {"id":7,"name":"Arjun Parmar","course":"BSc IT","year":2,"email":"arjun@example.com"},
+  {"id":8,"name":"Kavya Shah","course":"BCA","year":3,"email":"kavya@example.com"},
+  {"id":9,"name":"Reyansh Patel","course":"Btech","year":2,"email":"reyansh@example.com"},
+  {"id":10,"name":"Myra Mehta","course":"BTech","year":1,"email":"myra@example.com"},
+  {"id":11,"name":"Aditya Rao","course":"BCA","year":4,"email":"aditya@example.com"},
+  {"id":12,"name":"Sara Khan","course":"BSc IT","year":1,"email":"sara@example.com"},
+  {"id":13,"name":"Krish Thakkar","course":"BCom","year":3,"email":"krish@example.com"},
+  {"id":14,"name":"Navya Patel","course":"BTech","year":2,"email":"navya@example.com"},
+  {"id":15,"name":"Dhruv Shah","course":"BCA","year":1,"email":"dhruv@example.com"}
+]

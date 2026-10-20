@@ -1,52 +1,383 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Student Hub</title>
-<link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Student Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <h1>📚 Student Hub</h1>
-        <p>Welcome to Your Learning Portal</p>
-    </header>
 
-    <nav>
-        <a href="index.html">🏠Home</a>
-        <a href="courses.html">📚Courses</a>
-        <a href="assignment.html">📑 Assignments</a>
-        <a href="about.html">📞 Contact Us</a>
-        <a href="profile.html">👤 Profile</a>
-       
-    </nav>
+  <header>
 
-    <div class="welcome">
-        <h2>Welcome Student!</h2>
-        <p>Access all your academic information from one place.</p>
+    <h1>📚Student Hub</h1>
+
+    <p>
+      Interface of the student management system.
+    </p>
+
+  </header>
+
+
+
+  <nav>
+
+    <button
+      id="menuButton"
+      class="menu-button"
+      aria-label="Open navigation menu"
+      aria-expanded="false">
+
+      ☰
+
+    </button>
+
+
+    <div id="navLinks">
+
+      <a href="studenthub.html">🏠 Home</a>
+
+      <a href="courses.html">📚 Courses</a>
+
+      <a href="assignment.html">📑 Assignments</a>
+
+      <a href="notes.html">📒 Notes</a>
+
+      <a href="about.html">📞 Contact Us</a>
+
+      <a href="profile.html">👤 Profile</a>
+
     </div>
 
-    <div class="box">
-        <h3>📖 Courses</h3>
-        <p>View all your enrolled courses here.</p>
-        <button onclick="location.href='courses.html'">Open</button>
+
+    <button
+      id="themeButton"
+      class="theme-button"
+      aria-label="Change theme">
+
+      🌙
+
+    </button>
+
+  </nav>
+
+
+  <div
+    id="notification"
+    class="notification">
+
+    <span>
+      📢 Welcome to Student Hub!
+    </span>
+
+    <button
+      id="closeNotification"
+      aria-label="Close notification">
+
+      ×
+
+    </button>
+
+  </div>
+
+
+  <div class="welcome">
+
+    <h2>
+      Welcome Student!
+    </h2>
+
+    <p>
+      Manage your courses, assignments and study materials easily.
+    </p>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>📚 Courses</h3>
+
+    <p>
+      View all your enrolled courses here.
+    </p>
+
+    <button
+      class="open-modal"
+      data-title="📚 Courses"
+      data-message="Click the Courses option to view all your enrolled courses.">
+
+      Open
+
+    </button>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>📝 Assignments</h3>
+
+    <p>
+      Check your pending assignments.
+    </p>
+
+    <button
+      class="open-modal"
+      data-title="📝 Assignments"
+      data-message="Click the Assignments option to check your assignments.">
+
+      Open
+
+    </button>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>📒 Study Materials</h3>
+
+    <p>
+      Access your notes and study materials.
+    </p>
+
+    <button
+      class="open-modal"
+      data-title="📒 Study Materials"
+      data-message="Click the Notes option to access your study materials.">
+
+      Open
+
+    </button>
+
+  </div>
+
+
+  <section class="slider-section">
+
+    <h2>
+      Student Hub Updates
+    </h2>
+
+
+    <div class="slider">
+
+      <button
+        id="previousSlide"
+        aria-label="Previous slide">
+
+        ❮
+
+      </button>
+
+
+      <div class="slide-content">
+
+        <h3 id="slideTitle">
+          💻 Web Development
+        </h3>
+
+        <p id="slideText">
+          Learn HTML, CSS and JavaScript.
+        </p>
+
+      </div>
+
+
+      <button
+        id="nextSlide"
+        aria-label="Next slide">
+
+        ❯
+
+      </button>
+
     </div>
 
-    <div class="box">
-        <h3>📝 Assignments</h3>
-        <p>Check your pending assignments.</p>
-        <button onclick="location.href='assignment.html'">Open</button>
+
+    <p id="slideNumber">
+      1 / 4
+    </p>
+
+  </section>
+
+
+
+  <section class="faq-section">
+
+    <h2>
+      Frequently Asked Questions
+    </h2>
+
+
+    <div class="faq-item">
+
+      <button class="faq-question">
+
+        <span>
+          How do I access my courses?
+        </span>
+
+        <span>
+          +
+        </span>
+
+      </button>
+
+
+      <div class="faq-answer">
+
+        <p>
+          Click the Courses option in the navigation menu.
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="box">
-        <h3>📂 Study Materials</h3>
-        <p>Download notes and PDFs.</p>
-        <button onclick="location.href='notes.html'">Open</button>
+
+    <div class="faq-item">
+
+      <button class="faq-question">
+
+        <span>
+          Where can I find assignments?
+        </span>
+
+        <span>
+          +
+        </span>
+
+      </button>
+
+
+      <div class="faq-answer">
+
+        <p>
+          Click the Assignments option to view your assignments.
+        </p>
+
+      </div>
+
     </div>
 
-    <footer>
-        <p>&copy; 2026 Student Hub | All Rights Reserved</p>
-    </footer>
+
+    <div class="faq-item">
+
+      <button class="faq-question">
+
+        <span>
+          Where can I find notes?
+        </span>
+
+        <span>
+          +
+        </span>
+
+      </button>
+
+
+      <div class="faq-answer">
+
+        <p>
+          Click the Notes option to access your study materials.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+      <button class="faq-question">
+
+        <span>
+          Can I use dark mode?
+        </span>
+
+        <span>
+          +
+        </span>
+
+      </button>
+
+
+      <div class="faq-answer">
+
+        <p>
+          Yes. Click the moon button in the navigation bar.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div
+    id="modal"
+    class="modal"
+    role="dialog"
+    aria-modal="true">
+
+    <div class="modal-content">
+
+      <button
+        id="closeModal"
+        class="close-modal"
+        aria-label="Close">
+
+        ×
+
+      </button>
+
+
+      <h2 id="modalTitle">
+        Student Hub
+      </h2>
+
+
+      <p id="modalMessage">
+        Welcome to Student Hub.
+      </p>
+
+
+      <button id="modalOk">
+        OK
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+
+    <p>
+      &copy; 2026 Student Hub
+    </p>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
 
 </body>
+
 </html>
+
